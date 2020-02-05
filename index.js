@@ -19,10 +19,8 @@ const generatePassword = (charNumbers, includeUppercase, includeNumbers, include
   }
 
   const password = [];
-  console.log(charCodes.length);
   for (let i = 0; i < charNumbers; i++) {
     const index = getRandomNumber(charCodes.length);
-    console.log(charCodes[index]);
     password.push(String.fromCharCode(charCodes[index]));
   }
   return password.join('');
